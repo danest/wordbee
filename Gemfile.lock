@@ -45,6 +45,7 @@ GEM
     json (1.6.1)
     json_pure (1.6.5)
     multi_json (1.0.3)
+    nokogiri (1.5.0)
     pg (0.10.0)
     rack (1.4.0)
     rack-protection (1.2.0)
@@ -62,5 +63,6 @@ PLATFORMS
 
 DEPENDENCIES
   data_mapper
+  nokogiri
   pg (= 0.10.0)
   sinatra
