@@ -1,0 +1,32 @@
+<h1> Welcome to Word Bee </h1>
+	<div id="gettin-started">
+		<p> Word Bee is a word game that gives you the definition and 
+		part of speech of a word. You then guess which word it is. There
+		are currently three levels to choose from. </p>
+	</div>
+	<div id="info">
+	 <span id="start"><button type="button" id="start">Start Game</button></span>
+	 <span id="points">0 Points</span>
+	 <span id="timer"></span>
+	</div>
+	<div id="words">
+		<form action="/" method="post" id="checkword">
+		  <input type="text" name="word" id="word"placeholder="" />
+		  <input type="submit" id ="submit" value="SUBMIT"> 
+		</form>
+		<p>
+			<span id="speech"></span>:
+			<span id="definition"></span>
+		</p>
+	</div>
+	<p id="wrong"></p>
+	<p id="choose"><a href="#">Choose Level</a></p>
+	<div id="levels">
+		<p>
+			<span id="hard"><a href="#">Hard</a></span>
+			<span id="medium"><a href="#">Medium</a></span>
+			<span id="easy"><a href="#">Easy</a></span>
+			<a id="close" href="#">X</a>
+		</p>
+	</div>
+
