@@ -6,13 +6,13 @@ $(document).ready(function(){
       $.ajax({
         url: '/word/'+app.addOne(),
         success: function(data, xhr){
-          console.log(data);
+          //console.log(data);
           app.addWord(data);
         //alert(data.name);
         //console.log(xhr);
         },
         error: function(data){
-        console.log(data.status);
+        //console.log(data.status);
         }
       });
     },
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 	chooseMode: function(){
 	  $("#levels span").click(function(){
-		console.log(this);
+		//console.log(this);
 		$("#levels span.active").removeClass('active');
 		var text = $(this).attr('id');
 		if(text === 'hard')
@@ -56,7 +56,7 @@ $(document).ready(function(){
       var current = 1;
       //return an object
       return (function(){
-          current = Math.floor(Math.random()*40);
+          current = Math.floor(Math.random()*1270) + 1;
           return current;
       })();
    }
@@ -69,10 +69,10 @@ $(document).ready(function(){
 		e.preventDefault();
 	    return;
 	}
-    console.log($('input#word').val());
-    console.log($('#word').data('currentword'))
+    //console.log($('input#word').val());
+    //console.log($('#word').data('currentword'))
     if(inputword === $('#word').data('currentword').toLowerCase()){
-      console.log('+10');
+      //console.log('+10');
 	  var points = parseInt($("#points").text());
 	  points +=10;
 	  $("#points").text(points.toString());

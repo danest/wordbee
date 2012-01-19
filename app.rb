@@ -4,7 +4,7 @@ require 'json'
 require 'nokogiri'
 require 'open-uri'
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/wordbee.db")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite:///#{Dir.pwd}/wordbee.db")
 
 class Word
   include DataMapper::Resource
